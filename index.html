@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <header class="header">
+       <h2>Student Registration
+        System.</h2>
+       <p class="description">
+        The Student Registration System is a user-friendly platform designed to streamline student data management. <br>
+        It allows users to add, view, edit, and delete student records with details such as name, ID, email, and contact number. <br>
+         The system ensures data persistence using local storage, enabling records to remain available even after refreshing the page. <br>
+          It also validates input fields for accuracy,ensuring the integrity of the stored data. This tool simplifies managing student information efficiently and intuitively.
+       </p>
+   </header>
+
+   <main class="mainSection">
+    <section class="formcontent">
+          <section class="leftsection">
+               <form action="">
+                   <label for="name">Student Name</label><br>
+                   <input type="text" name="studentName" id="name" class="name"><br>
+                   <label for="id">Student ID</label><br>
+                   <input type="text" name="studentid" id="id" class="id"><br>
+                   <label for="email">Email ID</label><br>
+                   <input type="text" name="email" id="email" class="email"><br>
+                   <label for="contact">contact</label><br>
+                   <input type="text" name="contact" id="contact" class="contact"><br>
+                   <button type="button" class="submit">Click hear</button>
+               </form>
+          </section>
+          <section class="rightsection">
+            <h3>Student Records</h3>
+            <div class="studentTableContainer">
+                <table id="studentTable">
+                    <thead>
+                        <tr class="tableheaderrow">
+                            <th>Name</th>
+                            <th>ID</th>
+                            <th>Email</th>
+                            <th>Contact</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </section>
+    </section>
+   </main>
+   <script src="app.js"></script>
+</body>
+</html>
